@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CHAOS VM</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100%;
+        }
+        .vnc-container {
+            flex: 3;
+        }
+        .chat-container {
+            flex: 1;
+            border-left: 1px solid #ccc;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="vnc-container">
+            <iframe src="https://chaosofwebsimai.github.io/chaosvmnochat" name="test" title="vnc" allowfullscreen></iframe>
+        </div>
+        <div class="chat-container">
+            <iframe 
+                src="https://www.twitch.tv/embed/chaosofwebsimai/chat?parent=chaosofwebsimai.github.io" 
+                title="Twitch Chat" 
+                width="100%" 
+                height="100%" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
+
